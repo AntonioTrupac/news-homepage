@@ -26,7 +26,7 @@ interface RecentNewsSectionProps {
   className?: string;
 }
 
-const RecentNewsSection = ({ className }: RecentNewsSectionProps) => {
+const RecentNews = ({ className }: RecentNewsSectionProps) => {
   return (
     <div className={className}>
       <h1 className='text-[32px] font-bold leading-8 text-primary-orange'>
@@ -45,4 +45,4 @@ const RecentNewsSection = ({ className }: RecentNewsSectionProps) => {
   );
 };
 
-export default RecentNewsSection;
+export default RecentNews;

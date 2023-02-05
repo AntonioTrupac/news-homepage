@@ -1,4 +1,4 @@
-import { HeroSection, Navbar, RecentNewsSection } from './components';
+import { Hero, Navbar, PopularNews, RecentNews } from './components';
 
 const App = () => {
   return (
@@ -15,9 +15,11 @@ const App = () => {
       </header>
 
       <main id='main-content' className='px-4 pt-6 pb-20'>
-        <HeroSection />
+        <Hero />
 
-        <RecentNewsSection className='mt-16 bg-dark-blue px-5 py-6' />
+        <RecentNews className='mt-16 bg-dark-blue px-5 py-6' />
+
+        <PopularNews className='mt-16' />
       </main>
     </>
   );

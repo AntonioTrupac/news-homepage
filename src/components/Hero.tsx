@@ -4,7 +4,7 @@ interface HeroSectionProps {
   className?: string;
 }
 
-const HeroSection = ({ className }: HeroSectionProps) => {
+const Hero = ({ className }: HeroSectionProps) => {
   return (
     <div className={className}>
       <img src={mobileHeroImage} alt='hero' />
@@ -26,4 +26,4 @@ const HeroSection = ({ className }: HeroSectionProps) => {
   );
 };
 
-export default HeroSection;
+export default Hero;
