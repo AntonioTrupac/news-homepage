@@ -1,4 +1,5 @@
 import mobileHeroImage from '../assets/image-web-3-mobile.jpg';
+import desktopHeroImage from '../assets/images/image-web-3-desktop.jpg';
 
 interface HeroSectionProps {
   className?: string;
@@ -7,7 +8,9 @@ interface HeroSectionProps {
 const Hero = ({ className }: HeroSectionProps) => {
   return (
     <div className={className}>
-      <img src={mobileHeroImage} alt='hero' />
+      <img src={mobileHeroImage} alt='hero' className='xl:hidden' />
+
+      <img src={desktopHeroImage} alt='hero' className='hidden xl:block' />
 
       <h1 className='mt-6 text-[40px] font-extrabold capitalize leading-[40px] text-gray-900'>
         The Bright Future <span className='lowercase'>of</span> Web 3.0?
