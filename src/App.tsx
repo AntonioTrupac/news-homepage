@@ -1,16 +1,25 @@
-import { HeroSection, Navbar } from './components';
+import { HeroSection, Navbar, RecentNewsSection } from './components';
 
 const App = () => {
   return (
-    <main className='px-4'>
-      <header>
+    <>
+      <a
+        className='absolute left-0 m-3 -translate-y-16 bg-primary-red p-3 text-off-white transition focus:translate-y-0'
+        href={'#main-content'}
+      >
+        Skip Navigation
+      </a>
+
+      <header className='px-4 pt-7'>
         <Navbar />
       </header>
 
-      <div className='mt-6'>
+      <main id='main-content' className='px-4 pt-6 pb-20'>
         <HeroSection />
-      </div>
-    </main>
+
+        <RecentNewsSection className='mt-16 bg-dark-blue px-5 py-6' />
+      </main>
+    </>
   );
 };
 

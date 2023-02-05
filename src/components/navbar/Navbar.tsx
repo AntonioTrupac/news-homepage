@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='flex items-center justify-between pt-6'>
+    <nav className='flex items-center justify-between'>
       <div className='h-[50] w-[30]'>
         <Logo width={55} height={30} className='xl:hidden' />
       </div>
