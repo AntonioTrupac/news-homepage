@@ -35,7 +35,7 @@ const PopularNews = ({ className }: RecentNewsSectionProps) => {
         <PopularNewsCard
           key={data.id}
           news={data}
-          className='mt-8 flex items-center first-of-type:mt-0'
+          className='mt-8 flex items-center first-of-type:mt-0 lg:mt-0'
         />
       ))}
     </div>

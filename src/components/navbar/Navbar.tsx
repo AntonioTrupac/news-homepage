@@ -7,11 +7,56 @@ const Navbar = () => {
 
   return (
     <nav className='flex items-center justify-between'>
-      <div className='h-[50] w-[30]'>
-        <Logo width={55} height={30} className='xl:hidden' />
+      <div className='h-[50] w-[30] xl:hidden'>
+        <Logo width={55} height={30} />
       </div>
 
-      <Logo className='hidden xl:block' />
+      <div className='xl:block'>
+        <Logo className='hidden xl:block' />
+      </div>
+
+      <ul className='flex hidden items-center space-x-10 xl:flex'>
+        <li className='text-[15px] leading-[26px]'>
+          <a
+            href='#'
+            className='text-dark-gray hover:text-primary-red active:text-primary-red'
+          >
+            Home
+          </a>
+        </li>
+        <li className='text-[15px] leading-[26px]'>
+          <a
+            href='#'
+            className='text-dark-gray hover:text-primary-red active:text-primary-red'
+          >
+            New
+          </a>
+        </li>
+        <li className='text-[15px] leading-[26px]'>
+          <a
+            href='#'
+            className='text-dark-gray hover:text-primary-red active:text-primary-red'
+          >
+            Popular
+          </a>
+        </li>
+        <li className='text-[15px] leading-[26px]'>
+          <a
+            href='#'
+            className='text-dark-gray hover:text-primary-red active:text-primary-red'
+          >
+            Trending
+          </a>
+        </li>
+        <li className='text-[15px] leading-[26px]'>
+          <a
+            href='#'
+            className='text-dark-gray hover:text-primary-red active:text-primary-red'
+          >
+            Categories
+          </a>
+        </li>
+      </ul>
 
       <div className='flex items-center xl:hidden'>
         <button onClick={() => setIsOpen(true)}>

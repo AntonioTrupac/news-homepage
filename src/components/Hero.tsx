@@ -19,7 +19,7 @@ const Hero = ({ className }: HeroSectionProps) => {
         fulfilling its promise?
       </p>
 
-      <a className='mt-6 inline-block bg-primary-red px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-white hover:bg-primary-orange'>
+      <a className='mt-6 inline-block cursor-pointer bg-primary-red px-8 py-3 text-sm font-medium uppercase tracking-[0.2em] text-white hover:bg-dark-blue active:bg-dark-blue'>
         Read more
       </a>
     </div>

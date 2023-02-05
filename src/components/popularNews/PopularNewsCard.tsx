@@ -15,7 +15,7 @@ const PopularNewsCard = ({ news, className }: PopularNewsCard) => {
     <div className={className}>
       <img src={image} alt={title} height={127} width={100} />
 
-      <div className='ml-6'>
+      <div className='ml-6 md:pr-8 md:last-of-type:pr-0'>
         <p>{id}</p>
         <h2 className='text-dark-blue'>{title}</h2>
         <p className='mt-2 text-[15px] leading-[26px] text-dark-gray'>
