@@ -16,7 +16,7 @@ const App = () => {
 
       <main
         id='main-content'
-        className='px-4 pt-6 pb-20 xl:mx-auto xl:max-w-[1110px] xl:px-0'
+        className='px-4 pt-6 xl:pt-20 pb-20 xl:mx-auto xl:max-w-[1110px] xl:px-0'
       >
         <div className='flex flex-col xl:flex-row'>
           <Hero className='mr-[30px]' />
