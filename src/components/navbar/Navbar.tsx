@@ -64,13 +64,45 @@ const Navbar = () => {
         </button>
 
         {isOpen && (
-          <div className='fixed inset-0 bg-black bg-opacity-50'>
+          <div className='fixed inset-0 z-20 bg-black bg-opacity-50'>
             <div className='fixed inset-y-0 left-1/3 right-0 bg-white'>
-              <div className='absolute top-6 right-0 pr-4'>
+              <div className='absolute top-6 right-0 pr-5'>
                 <button onClick={() => setIsOpen(false)}>
                   <Close />
                 </button>
               </div>
+
+              <ul className='mt-36 ml-6'>
+                <li className='mb-6 text-lg leading-6'>
+                  <a href='#' className='active:text-primary-orange'>
+                    Home
+                  </a>
+                </li>
+
+                <li className='mb-6 text-lg leading-6'>
+                  <a href='#' className='active:text-primary-orange'>
+                    New
+                  </a>
+                </li>
+
+                <li className='mb-6 text-lg leading-6'>
+                  <a href='#' className='active:text-primary-orange'>
+                    Popular
+                  </a>
+                </li>
+
+                <li className='mb-6 text-lg leading-6'>
+                  <a href='#' className='active:text-primary-orange'>
+                    Trending
+                  </a>
+                </li>
+
+                <li className='text-lg leading-6'>
+                  <a href='#' className='active:text-primary-orange'>
+                    Categories
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         )}

@@ -16,10 +16,10 @@ const App = () => {
 
       <main
         id='main-content'
-        className='px-4 pt-6 xl:pt-20 pb-20 xl:mx-auto xl:max-w-[1110px] xl:px-0'
+        className='px-4 pt-6 pb-20 xl:mx-auto xl:max-w-[1110px] xl:px-0 xl:pt-20'
       >
         <div className='flex flex-col xl:flex-row'>
-          <Hero className='mr-[30px]' />
+          <Hero className='xl:mr-[30px]' />
 
           <RecentNews className='mt-16 bg-dark-blue px-5 py-6 xl:mt-0' />
         </div>

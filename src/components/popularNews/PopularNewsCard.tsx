@@ -27,9 +27,13 @@ const PopularNewsCard = ({ news, className }: PopularNewsCard) => {
 
       <div className='ml-6 md:pr-8 md:last-of-type:pr-0'>
         <p className='text-[32px] font-bold leading-8 text-grayish'>{number}</p>
-        <h2 className='mt-3 text-lg font-extrabold leading-6 text-dark-blue'>
-          <a href="#" className='before:absolute before:inset-0 before:z-10 before:cursor-pointer hover:text-primary-orange'>{title}</a>
-          
+        <h2 className='text-[[18px] mt-3 font-extrabold leading-6 text-dark-blue'>
+          <a
+            href='#'
+            className='before:absolute before:inset-0 before:z-10 before:cursor-pointer hover:text-primary-orange'
+          >
+            {title}
+          </a>
         </h2>
 
         <p className='mt-2 text-[15px] leading-[26px] text-dark-gray'>
